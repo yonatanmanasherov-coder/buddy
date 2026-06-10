@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BUDDY — התחל כאן · המשך מחר</title>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&family=Fredoka:wght@600;700&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{font-family:'Heebo',sans-serif;background:
+    radial-gradient(1100px 650px at 85% -10%, rgba(31,192,139,.12), transparent 60%),
+    radial-gradient(900px 600px at -10% 110%, rgba(91,176,224,.10), transparent 55%), #0f0f15;
+    color:#e8e8f0;padding:32px 18px 80px;line-height:1.65;}
+  .wrap{max-width:940px;margin:0 auto;}
+  .hero{text-align:center;padding:22px 20px 26px;border-bottom:1px solid #2a2a38;margin-bottom:26px;}
+  .hero h1{font-family:'Fredoka',sans-serif;font-size:42px;color:#1FC08B;line-height:1;}
+  .tagline{display:flex;gap:.4em;justify-content:center;direction:ltr;font-family:'Fredoka',sans-serif;font-weight:600;letter-spacing:1.5px;font-size:11px;margin-top:3px;}
+  .tagline .c1{color:#F0867F;}.tagline .c2{color:#5BB0E0;}.tagline .c3{color:#7DCB9A;}.tagline .c4{color:#F2BE4C;}
+  .hero p{color:#7a7a9a;font-size:13px;margin-top:10px;}
+  .date{display:inline-block;background:rgba(31,192,139,.12);border:1px solid rgba(31,192,139,.3);color:#1FC08B;border-radius:100px;padding:4px 14px;font-size:12px;font-weight:700;margin-top:12px;}
+  h2{font-size:18px;font-weight:900;margin:28px 0 12px;display:flex;align-items:center;gap:9px;}
+  .card{background:#16161f;border:1px solid #2a2a38;border-radius:16px;padding:16px 20px;margin-bottom:14px;}
+  ul{list-style:none;} li{padding:5px 0;font-size:14px;color:#c8c8e0;display:flex;gap:9px;align-items:flex-start;}
+  li::before{content:'✓';color:#1FC08B;font-weight:900;flex-shrink:0;}
+  li.todo::before{content:'☐';color:#F2BE4C;} li.dot::before{content:'•';color:#7a7a9a;}
+  li.star::before{content:'★';color:#F2BE4C;}
+  .file{background:#13131b;border:1px solid #2a2a38;border-radius:12px;padding:13px 15px;margin-bottom:10px;}
+  .file b{font-family:monospace;font-size:13.5px;color:#1FC08B;} .file small{display:block;color:#9a9aae;font-size:12px;margin-top:3px;}
+  code{background:rgba(255,255,255,.06);border:1px solid #2a2a38;border-radius:7px;padding:2px 8px;font-size:12.5px;color:#9fd9c5;font-family:monospace;word-break:break-all;}
+  .codeblock{background:rgba(0,0,0,.3);border:1px solid #2a2a38;border-radius:10px;padding:12px 14px;font-family:monospace;font-size:12.5px;color:#9fd9c5;white-space:pre-wrap;word-break:break-all;margin:8px 0;}
+  .warn{background:rgba(242,190,76,.07);border:1px solid rgba(242,190,76,.3);border-radius:12px;padding:13px 16px;font-size:13px;color:#e6ce90;line-height:1.6;margin-top:8px;}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px;}@media(max-width:640px){.grid2{grid-template-columns:1fr;}}
+  .next h2{color:#F2BE4C;}
+  a{color:#5BB0E0;}
+  .step{display:flex;gap:12px;align-items:flex-start;margin-bottom:10px;}
+  .step .n{width:26px;height:26px;border-radius:50%;background:var(--b,#1FC08B);color:#06281f;font-weight:900;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:13px;}
+  .step b{font-size:14px;}
+</style></head>
+<body><div class="wrap">
+
+  <div class="hero">
+    <h1>Buddy</h1>
+    <div class="tagline"><span class="c1">EVRYBODY</span><span class="c2">NEEDS</span><span class="c3">A</span><span class="c4">BUDDY</span></div>
+    <p>תיקיית המשך — כל מה שצריך כדי להמשיך מחר מאיפה שעצרנו</p>
+    <div class="date">📅 עודכן: 11 ביוני 2026</div>
+  </div>
+
+  <h2>▶️ איך ממשיכים מחר — 3 צעדים</h2>
+  <div class="card">
+    <div class="step"><div class="n">1</div><div><b>לפתוח את האפליקציה ולראות איפה אנחנו:</b> לחיצה כפולה על <code>BUDDY_PROJECT\BUDDY.html</code> (הגרסה הקלילה, בלי שמע) או לפתוח את <code>BUDDY_עם_שמע.zip</code> ולהריץ את ה-BUDDY.html שבתוכו (גרסה מלאה עם הקלטות).</div></div>
+    <div class="step"><div class="n">2</div><div><b>לקרוא את "מה נשאר לעשות"</b> בהמשך הדף — שם רשומות המשימות הפתוחות.</div></div>
+    <div class="step"><div class="n">3</div><div><b>לפתוח צ'אט חדש עם Claude</b> ולכתוב: <i>"תמשיך את פרויקט BUDDY מהתיקייה buddy code — קרא את 00_המשך_מחר"</i>. (Claude שומר זיכרון של הפרויקט וימשיך משם.)</div></div>
+  </div>
+
+  <h2>🎯 מה זה BUDDY</h2>
+  <div class="card"><p style="font-size:14px;color:#c8c8e0">אפליקציית AI שמשמשת <b>חבר דיגיטלי</b> לילדים ובני נוער (10–18) — תמיכה רגשית, חיזוק והעצמה בגישת NLP. שתי דמויות: <b style="color:#1FC08B">אמיגו</b> (בנים) ו-<b style="color:#F0867F">בסטי</b> (בנות). עברית RTL, לשון מגדרית. בנוי כיום על Landbot — וזו <b>הדמיה/אב-טיפוס מלא</b> של המוצר כאפליקציה.</p></div>
+
+  <h2>✅ מה כבר נבנה (הכול עובד ומאומת)</h2>
+  <div class="card"><ul>
+    <li><b>מסך פתיחה</b> עם הלוגו האמיתי + בחירת דמות (אמיגו/בסטי) ואז בחירת <b>מראה (3 ווריאציות)</b>.</li>
+    <li><b>אונבורדינג לפי האפיון:</b> שם → מגדר → גיל → "3 דברים שמשמחים / 3 שכיף לעשות" (נשמר ומשמש בהמשך).</li>
+    <li><b>פלואים:</b> 😊 חיובי · 😞 שלילי (כולל בדיקת בטיחות) · 🤔 התייעצות · 🫂 <b>הכלה ושיתוף בלבד</b> · 🤍 חוסר שיתוף + ניתוב חכם.</li>
+    <li><b>5 תרגילי NLP דינמיים</b> לבחירה (ענן/בלון/סמל/אור/מים) + מצב <b>🎧 שמיעה (קול אמיתי מגדרי) / 📖 קריאה</b> — בשני הפלואים.</li>
+    <li><b>תמונות עוגנים</b> (כף יד/לב/מצח/לייק) ו<b>תמונות מקומות</b> (בית/חברים/בי"ס/חוג/משפחה) — אמיתיות, לפי דמות.</li>
+    <li><b>מאגר כוחות והעצמה מגדרי</b> (מתוך מאגרי היכולות/תכונות שלך).</li>
+    <li><b>רקעי שיחה דינמיים</b> (תכלת/ורוד/צהוב עם הציורים) מתחלפים בכל שיחה.</li>
+    <li><b>קו אדום (AI):</b> זיהוי תוכן מצוקה → עצירה → ער"ן 1201 → רישום אירוע בטיחות.</li>
+    <li><b>📓 יומן דיגיטלי</b> (כותב/פורק → שומר או מקבל פידבק NLP חיובי) · ⭐ רגעים · 🔥 רצף ימים · 🏆 תגים · 🧘 ספריית תרגילי רוגע.</li>
+    <li><b>👨‍👩‍👧 פורטל הורים נפרד</b> (כניסה בקוד, לא בניווט הילד) — מגמת רווחה, התראות בטיחות, <b>טיפים בגישת אדלר</b>, ותזכורת ביום פחות טוב. פרטיות by-design (לא חושף תוכן שיחות).</li>
+    <li>שמירת נתונים במכשיר (localStorage) · תצוגת מחשב/מובייל · מסך מלא.</li>
+  </ul></div>
+
+  <h2>📁 הקבצים החשובים</h2>
+  <div class="grid2">
+    <div class="file"><b>BUDDY_PROJECT\BUDDY.html</b><small>📤 הקובץ לשליחה — תמונות מוטמעות (980KB). בלי שמע. נפתח בלחיצה כפולה.</small></div>
+    <div class="file"><b>BUDDY_עם_שמע.zip</b><small>📦 גרסה מלאה עם 18 ההקלטות (22MB). פותחים ולוחצים על BUDDY.html.</small></div>
+    <div class="file"><b>BUDDY_PROJECT\BUDDY_App_Simulation.html</b><small>🛠️ גרסת העבודה (לעריכות). מושכת תמונות+שמע מ-assets/. אחרי שינוי — בונים מחדש את BUDDY.html.</small></div>
+    <div class="file"><b>BUDDY_PROJECT\assets\</b><small>כל החומרים: דמויות, עוגנים, מקומות, רקעים, ותיקיית audio/ (18 הקלטות).</small></div>
+    <div class="file"><b>buddy build\</b><small>📚 חומרי המקור שלך: אפיון סופי, מאגרי כוחות, פרומפט, ספריית השמע המלאה (43MB / 38 קבצים), תמונות.</small></div>
+    <div class="file"><b>BUDDY_PROJECT\_serve.js</b><small>שרת מקומי קטן (node) להרצת תצוגה מקדימה על פורט 8755.</small></div>
+  </div>
+
+  <h2>🔧 פקודות שימושיות (למפתח/Claude)</h2>
+  <div class="card">
+    <p style="font-size:13px;margin-bottom:6px">הרצת תצוגה מקדימה מקומית:</p>
+    <div class="codeblock">cd BUDDY_PROJECT
+node _serve.js   →   http://localhost:8755</div>
+    <p style="font-size:13px;margin:10px 0 6px">בנייה מחדש של BUDDY.html אחרי עריכה (מטמיע תמונות מ-assets):</p>
+    <div class="codeblock">סקריפט node שמטמיע את כל קבצי assets כ-base64 לתוך BUDDY.html.
+(Claude מכיר את הסקריפט — פשוט בקשי "תבנה מחדש את BUDDY.html").</div>
+    <p style="font-size:12.5px;color:#9a9aae;margin-top:8px">עריכות נעשות ב-<b>BUDDY_App_Simulation.html</b>, ואז בונים מחדש את BUDDY.html ואת הזיפ.</p>
+  </div>
+
+  <div class="next">
+  <h2>🚀 מה נשאר לעשות (להמשך)</h2>
+  <div class="card"><ul>
+    <li class="star"><b>קישור קבוע</b> — להעלות ל-<b>Netlify Drop</b> (גוררים את BUDDY.html → מקבלים לינק קבוע). הלינק הזמני שנוצר אתמול כבר לא פעיל.</li>
+    <li class="todo"><b>ספריית שמע מלאה</b> — כרגע מוטמעות הקלטות מייצגות (18). יש עוד (43MB/38 קבצים ב-buddy build). למוצר האמיתי: לארח את כל ההקלטות בשרת ולמפות כל תרגיל להקלטה שלו.</li>
+    <li class="todo"><b>אופציונלי:</b> בחירת 5 תרגילים מפורשת גם בפלואו החיובי (כרגע: שמיעה=הקלטה מתחלפת, קריאה=טקסט).</li>
+    <li class="todo"><b>ליטוש לשון:</b> נותרו ניסוחי "/" בתוויות ממשק כלליות (אורח/ת, מחובר/ת) — לא קריטי.</li>
+    <li class="todo"><b>החלטות פתוחות:</b> צבע בסטי (קורל/ירוק)? · שימוש ב-4 ווריאציות אווטאר לפי רגש? · תשובות AI חיות אמיתיות (דורש מפתח Anthropic API) במקום סקריפט?</li>
+  </ul></div>
+  </div>
+
+  <h2>📝 הערות חשובות</h2>
+  <div class="card"><ul>
+    <li class="dot">צבעי המותג: ירוק לוגו <code>#1FC08B</code> · קורל <code>#F0867F</code> · כחול <code>#5BB0E0</code> · צהוב <code>#F2BE4C</code>.</li>
+    <li class="dot">אמיגו = הקלטות "לבן" (קול בן) · בסטי = הקלטות "לבת" (קול בת).</li>
+    <li class="dot">המוצר הוא <b>הדמיה מונחית</b> (תשובות כתובות מראש, לא AI חי) — נאמן לאפיון של הבוט המקורי שהוא מבוסס-כפתורים.</li>
+    <li class="dot">Claude שומר זיכרון של הפרויקט — אפשר פשוט להגיד "תמשיך את BUDDY".</li>
+  </ul></div>
+
+  <p style="text-align:center;color:#7a7a9a;font-size:12px;margin-top:24px">נתראה מחר 💚 — BUDDY · Everybody needs a buddy</p>
+</div></body></html>
