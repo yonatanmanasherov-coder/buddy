@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BUDDY — סיכום והמשך</title>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&family=Fredoka:wght@600;700&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{font-family:'Heebo',sans-serif;background:
+      radial-gradient(1100px 650px at 85% -10%, rgba(31,192,139,.12), transparent 60%),
+      radial-gradient(900px 600px at -10% 110%, rgba(240,134,127,.10), transparent 55%), #0f0f15;
+    color:#e8e8f0;padding:34px 18px 70px;line-height:1.6;}
+  .wrap{max-width:920px;margin:0 auto;}
+  .hero{text-align:center;padding:26px 20px 30px;border-bottom:1px solid #2a2a38;margin-bottom:28px;}
+  .emblem{width:78px;height:78px;border-radius:50%;background:#fff;padding:6px;margin:0 auto 12px;box-shadow:0 12px 30px rgba(31,192,139,.28);}
+  .emblem svg{width:100%;height:100%;}
+  .hero h1{font-family:'Fredoka',sans-serif;font-size:44px;color:#1FC08B;line-height:1;}
+  .tagline{display:flex;gap:.4em;justify-content:center;direction:ltr;font-family:'Fredoka',sans-serif;font-weight:600;letter-spacing:1.5px;font-size:12px;margin-top:2px;}
+  .tagline .c1{color:#F0867F;}.tagline .c2{color:#5BB0E0;}.tagline .c3{color:#7DCB9A;}.tagline .c4{color:#F2BE4C;}
+  .hero p{color:#7a7a9a;font-size:13px;margin-top:10px;}
+  .date-badge{display:inline-block;background:rgba(31,192,139,.12);border:1px solid rgba(31,192,139,.3);color:#1FC08B;border-radius:100px;padding:4px 14px;font-size:12px;font-weight:700;margin-top:12px;}
+
+  h2{font-size:19px;font-weight:900;margin:30px 0 12px;display:flex;align-items:center;gap:9px;}
+  .card{background:#16161f;border:1px solid #2a2a38;border-radius:16px;padding:18px 20px;margin-bottom:14px;}
+  .card h3{font-size:15px;font-weight:800;margin-bottom:8px;color:#e8e8f0;}
+  ul{list-style:none;}
+  li{padding:5px 0 5px 0;font-size:14px;color:#c8c8e0;display:flex;gap:9px;align-items:flex-start;}
+  li::before{content:'✓';color:#1FC08B;font-weight:900;flex-shrink:0;}
+  li.dot::before{content:'•';color:#7a7a9a;}
+  li.todo::before{content:'☐';color:#F2BE4C;}
+  li.q::before{content:'?';color:#5BB0E0;font-weight:900;}
+  .pill{display:inline-block;background:rgba(255,255,255,.05);border:1px solid #2a2a38;border-radius:8px;padding:2px 9px;font-size:12.5px;font-family:monospace;color:#9fd9c5;}
+  .link-box{background:rgba(31,192,139,.06);border:1px solid rgba(31,192,139,.3);border-radius:14px;padding:16px 18px;margin:8px 0;}
+  .link-box .url{font-family:monospace;font-size:13px;color:#1FC08B;word-break:break-all;background:rgba(0,0,0,.25);padding:10px 12px;border-radius:9px;display:block;margin:8px 0;}
+  .warn{background:rgba(242,190,76,.06);border:1px solid rgba(242,190,76,.3);border-radius:12px;padding:13px 16px;font-size:13px;color:#e6cE90;margin-top:8px;}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+  @media(max-width:640px){.grid2{grid-template-columns:1fr;}}
+  .file{background:#13131b;border:1px solid #2a2a38;border-radius:12px;padding:13px 15px;}
+  .file b{font-family:monospace;font-size:13px;color:#1FC08B;}
+  .file small{display:block;color:#8a8a9a;font-size:12px;margin-top:3px;}
+  .next h2{color:#F2BE4C;}
+  a{color:#5BB0E0;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="hero">
+    <div class="emblem" id="emblem"></div>
+    <h1>Buddy</h1>
+    <div class="tagline"><span class="c1">EVRYBODY</span><span class="c2">NEEDS</span><span class="c3">A</span><span class="c4">BUDDY</span></div>
+    <p>סיכום מצב הפרויקט והמשך עבודה</p>
+    <div class="date-badge">📅 עודכן: 10 ביוני 2026</div>
+  </div>
+
+  <h2>🎯 מה זה BUDDY</h2>
+  <div class="card">
+    <p style="font-size:14px;color:#c8c8e0">בוט/אפליקציית AI שמשמש/ת <b>חבר דיגיטלי</b> לילדים ובני נוער (10–18) שמתמודדים עם אתגרים חברתיים, בדידות וחרדה חברתית. שתי דמויות: <b style="color:#1FC08B">אמיגו</b> (לבנים) ו-<b style="color:#F0867F">בסטי</b> (לבנות). כתיבה מגדרית מלאה, עברית RTL. כיום בנוי על Landbot — והמטרה לעבור לאפליקציה.</p>
+  </div>
+
+  <h2>✅ מה נבנה — מוצר אינטראקטיבי מלא</h2>
+  <div class="card">
+    <h3>הדמיה עובדת מקצה לקצה (קובץ HTML יחיד)</h3>
+    <ul>
+      <li>החלפה חיה בין תצוגת <b>מחשב</b> (סרגל צד) ל-<b>מובייל</b> (בר טאבים), ובין <b>אמיגו</b> ל-<b>בסטי</b>.</li>
+      <li>מצב <b>מסך מלא</b> (כפתור ⛶) — ההדמיה ממלאה את כל המסך.</li>
+      <li><b>4 הפלואים</b> המלאים: משהו טוב · משהו קשה (כולל בדיקת בטיחות) · התלבטות · לא בא לי לשתף — עם השהיות הקלדה, כפתורים, ותרגילים מדורגים.</li>
+      <li><b>קו אדום (AI)</b>: זיהוי תוכן מצוקה → עצירה → שאלה עדינה → ער"ן 1201 → רישום אירוע בטיחות.</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h3>7 מסכים פעילים + שמירת נתונים</h3>
+    <ul>
+      <li><b>רגעים ששמרתי</b> · <b>הכוחות וההישגים שלי</b> (רצף ימים, מצב-רוח שבועי, תגים, מאגר כוחות) · <b>תרגילי רוגע</b> (5 תרגילים + עיגול נשימה מונפש).</li>
+      <li><b>הגדרות</b> (דמות/שם/מגדר/מהירות/מחיקת נתונים/קוד הורים) · <b>עזרה ובטיחות</b> (ער"ן 1201, 105, 118, 100).</li>
+      <li><b>פורטל הורים</b> נעול בקוד — מציג מגמת רווחה והתראות בלבד, <b>לא</b> את תוכן השיחות (פרטיות by-design).</li>
+      <li><b>צ'ק-אין יומי + רצף ימים</b> ו<b>מערכת תגים</b> (11 הישגים) לעידוד התמדה.</li>
+      <li>כל הנתונים נשמרים במכשיר (localStorage) — נטענים מחדש ברענון.</li>
+    </ul>
+  </div>
+
+  <h2>🎨 מיתוג לפי הלוגו האמיתי</h2>
+  <div class="card">
+    <ul>
+      <li>הצבע הראשי בכל המוצר = <b style="color:#1FC08B">ירוק הלוגו (#1FC08B)</b>, עם פלטת פסטל-קשת (קורל / כחול / ירוק / זהב).</li>
+      <li>הלוגו שוחזר בתוך האפליקציה: סמל מעגל-הילדים + הכיתוב "Buddy" + הסלוגן EVRYBODY NEEDS A BUDDY.</li>
+      <li><b>דמויות אמיתיות</b>: האווטארים של אמיגו ובסטי (מה-ZIP) מוטמעים בכותרת הצ'אט, בבועות ההודעה ובמסך הבחירה.</li>
+      <li>ערכות: אמיגו = ירוק+כחול · בסטי = קורל+זהב (שתיהן מצבעי הלוגו).</li>
+    </ul>
+  </div>
+
+  <h2>✍️ דיוק תוכן לפי הפרומפט המקורי (מה-Drive)</h2>
+  <div class="card">
+    <ul>
+      <li><b>אונבורדינג עשיר</b>: שם → מגדר → גיל → שאלות היכרות (הכי משמח · סדרה/משחק · אוכל · מוזיקה · אדם קרוב · מבוגר שסומכים עליו) עם שיקוף חם בסגנון NLP.</li>
+      <li>המידע <b>נשמר ומשמש</b> בהמשך (למשל בבדיקת הבטיחות מזכיר בשם את המבוגר שסומכים עליו).</li>
+      <li>משפטי החיזוק הותאמו לתבניות המקור.</li>
+    </ul>
+  </div>
+
+  <h2>📁 הקבצים</h2>
+  <div class="grid2">
+    <div class="file"><b>BUDDY_PROJECT/BUDDY.html</b><small>📤 הקובץ לשליחה — תמונות מוטמעות בפנים, קובץ יחיד 190KB. נפתח בלחיצה כפולה בכל מכשיר.</small></div>
+    <div class="file"><b>BUDDY_PROJECT/BUDDY_App_Simulation.html</b><small>🛠️ גרסת העבודה לעריכות — מושכת תמונות מ-assets/. אחרי שינוי בונים מחדש את BUDDY.html.</small></div>
+    <div class="file"><b>BUDDY_PROJECT/assets/</b><small>אווטארים: amigo.png/bestie.png (ראשיים) + amigo1-4/bestie1-4 (4 ורסיות לכל דמות) + גרסאות מוקטנות.</small></div>
+    <div class="file"><b>BUDDY_PROJECT/_serve.js</b><small>שרת מקומי קטן (node) להרצת תצוגה מקדימה על פורט 8755.</small></div>
+  </div>
+
+  <h2>🔗 שיתוף — לינק</h2>
+  <div class="link-box">
+    <b>לינק זמני שנוצר (cloudflared):</b>
+    <span class="url">https://opposite-jane-politicians-accompanied.trycloudflare.com/BUDDY.html</span>
+    <div class="warn">⚠️ זמני בלבד — עובד רק כל עוד המחשב דולק והשרת+המנהרה פעילים. אחרי כיבוי/שינה הוא מת והכתובת משתנה. <b>לא להסתמך עליו לטווח ארוך.</b></div>
+  </div>
+  <div class="card">
+    <h3>לקישור קבוע (מחר)</h3>
+    <ul>
+      <li class="dot">הכי קל בלי קוד: <b>app.netlify.com/drop</b> → לגרור את BUDDY.html → מקבלים קישור קבוע.</li>
+      <li class="dot">או: לחבר חשבון GitHub/Netlify ואני אפרוס ואתן קישור קבוע.</li>
+    </ul>
+  </div>
+
+  <div class="next">
+  <h2>🚀 להמשך מחר</h2>
+  <div class="card">
+    <ul>
+      <li class="todo"><b>קישור קבוע</b> — להחליט על דרך אחסון ולפרוס (Netlify Drop / GitHub Pages).</li>
+      <li class="todo"><b>לוגו מקורי</b> — כרגע הלוגו שוחזר ב-CSS. אם רוצים את קובץ הלוגו המדויק מוטמע — לשלוח קישור ישיר לקובץ הלוגו (PNG).</li>
+      <li class="todo"><b>צבע בסטי</b> — להחליט אם בסטי תישאר קורל או תעבור לירוק כמו הלוגו.</li>
+      <li class="todo"><b>4 ורסיות אווטאר</b> — אפשר להשתמש בהן (אווטאר שמשתנה לפי רגש/תרגיל).</li>
+      <li class="todo"><b>תוכן פלואו מלא</b> — תיקיית "בניית BUDDY" ב-Drive (פלואו שלילי/התייעצות מפורט, ספריות תרגילים) לא נגישה דרך החיבור. אם רוצים דיוק 100% — לשתף קישורים ישירים לקבצים האלה.</li>
+      <li class="q">עוד תיקוני ניסוח ספציפיים בפלואו? (בפורמט "במקום ___ צריך ___")</li>
+    </ul>
+  </div>
+  </div>
+
+  <p style="text-align:center;color:#7a7a9a;font-size:12px;margin-top:24px">נתראה מחר 💚 — BUDDY · Everybody needs a buddy</p>
+
+</div>
+<script>
+  const cols=['#F0867F','#F2BE4C','#7DCB9A','#5BB0E0'];let dots='';
+  for(let i=0;i<8;i++){const a=(-90+i*45)*Math.PI/180,x=50+33*Math.cos(a),y=50+33*Math.sin(a);dots+=`<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="9.5" fill="${cols[i%4]}"/>`;}
+  document.getElementById('emblem').innerHTML=`<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">${dots}<circle cx="50" cy="50" r="12" fill="#1FC08B"/></svg>`;
+</script>
+</body>
+</html>
